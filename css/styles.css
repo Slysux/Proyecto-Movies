@@ -1,0 +1,9 @@
+body{
+  margin:0; 
+}
+
+.header{
+  display: grid;
+  grid-template: 100px / repeat(3,1fr);
+  background: aqua;
+}
