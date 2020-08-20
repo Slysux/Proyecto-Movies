@@ -64,3 +64,23 @@ body{
   justify-self: center;
   align-self: center;
 }
+
+.principal{
+  display: grid;
+  grid-template: 100vh / 200px 1fr;
+}
+
+.lateral{
+  background-color: #db4141;
+  color: white;
+}
+
+.menu ul{
+  list-style:none;
+  
+}
+
+.menu a{
+  text-decoration: none;
+  color: white;
+}
