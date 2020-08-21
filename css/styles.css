@@ -5,7 +5,8 @@ body{
 
 .header{
   display: grid;
-  grid-template: 100px / minmax(200px,300px) minmax(500px, 1fr) 300px;
+  width: 100%;
+  grid-template: 100px / minmax(200px, 1fr) minmax(600px, 1fr) minmax(200px, 1fr)  ;
   background: white;
   box-shadow: 0px 5px 10px 0px #0005;
 }
@@ -41,7 +42,7 @@ body{
   height: 100%;
   margin: 0;
   display: grid;
-  grid-template: 1fr / 100px 1fr 100px;
+  grid-template: 1fr / 1fr 100px 1fr;
 }
 
 .user p{
@@ -54,13 +55,13 @@ body{
   width: 50px;
   border-radius: 50px;
   align-self: center;
-  justify-self:end;
+  justify-self:center;
 }
 
 .icon-arrow{
   font-size: 24px;
   text-decoration: none;
   color: #000;
-  justify-self: center;
+  justify-self: start;
   align-self: center;
 }
