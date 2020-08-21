@@ -67,11 +67,11 @@ body{
 
 .principal{
   display: grid;
-  grid-template: 90.1vh / minmax(100px,200px) 1fr;
+  grid-template: 90.1vh / 150px 1fr;
 }
 
 .lateral{
-  background-color: #db4141;
+  background-color: #c72323;
   color: white;
 }
 
@@ -89,8 +89,11 @@ body{
   list-style:none;
 }
 
-.menu p{
+.menu a p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   text-align: center;
+  font-weight: bold;
 }
 
 .list{
@@ -112,7 +115,6 @@ body{
 }
 
 .menu a{
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
   margin: 0;
   text-decoration: none;
