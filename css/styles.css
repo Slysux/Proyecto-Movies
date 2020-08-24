@@ -65,3 +65,130 @@ body{
   justify-self: start;
   align-self: center;
 }
+
+.principal{
+  display: grid;
+  grid-template: 90.1vh / 150px 1fr;
+}
+
+.lateral{
+  background-color: #c72323;
+  color: white;
+}
+
+.menu{
+  width: auto;
+  height: 100%;
+}
+
+.menu ul{
+  padding: 0;
+  margin: 0;
+  display:grid;
+  height: 100%;
+  grid-template-rows: repeat(2, 1fr);
+  list-style:none;
+}
+
+.menu a p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.list{
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.home,
+.trending,
+.likes{
+  text-align: center;
+  align-self: center;
+}
+
+.settings{
+  text-align: center;
+  align-self: end;
+}
+
+.menu a{
+  font-size: 32px;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+}
+
+.content{
+  padding: 30px 100px;
+  display: grid;
+  grid-template: repeat(3, minmax(200px,1fr)) / 1fr;
+  align-content: center;
+  justify-content: center;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.movies{
+  display: grid;
+  grid-template: 20px  1fr/ repeat(4, minmax(350px,1fr));
+  gap: 30px;
+  grid-template-areas: "text ."
+                       "images images";
+  /* align-content: center;
+  justify-content: center; */
+}
+
+.text{
+  grid-area: text;
+}
+
+.images{
+  /* display: flex; */
+  margin: 0;
+  cursor: pointer;
+  grid-area: images;
+  grid-column: span 1;
+  height: 100%;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.images img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-overlay{
+  background-color: #3a3a3a66;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  padding: 1em;
+  /* align-items: center; */
+  /* justify-content: center; */
+  color:white;
+}
+
+.image-overlay h4{
+  margin: .5em 0;
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+.image-overlay p{
+  margin: 0;
+  font-size: .8em;
+}
+
+.images:hover .image-overlay{
+  display: block;
+  top:45%;
+}
