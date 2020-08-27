@@ -1,0 +1,85 @@
+@media screen and (max-width: 1024px){
+  .container{
+    grid-template: 6% 1fr / 8% 1fr;
+    grid-template-areas: "header header"
+                       "lateral principal";
+  }
+  .header{
+    grid-template-columns: 1fr 400px 1fr;
+  }
+  .header input{
+    width: 80%;
+  }
+  .user img{
+    width: 2.5em;
+  }
+  .logo img{
+    width: 6.25em;
+  }
+  .user{
+    grid-template-columns: 2fr 1.5fr 2fr;
+  }
+  .user span{
+    font-size: .875em;
+  }
+  .menu ul{
+    grid-template-rows:1fr 2fr ; 
+  }
+  .menu a{
+    font-size: 1.25em;
+  }
+  .menu a p{
+    font-size: .67em;
+  }
+  .movies{
+    grid-template: 2em 1fr 1fr / repeat(2, minmax(350px ,1fr));
+    grid-template-areas: "text text"
+                         "images images"
+                         "images images";
+  }
+  .images{
+    grid-row: span 1;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    grid-template: 3.75em 1fr 8%/ 1fr;
+    grid-template-areas: "header"
+                         "principal"
+                         "lateral";
+  }
+  .header{
+    position: initial;
+    grid-template-columns: 1fr 400px 1fr ;
+  }
+  .user{
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .user span{
+    display: none;
+  }
+  .user img{
+    width: 2.1875em;
+    justify-self: center;
+  }
+  .lateral{
+    grid-area: lateral;
+    align-self: end;
+    background-color: #c72323;
+    color: white;
+    top: 90%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+  }
+  .movies{
+    grid-template: 2em repeat(4, 1fr) / 1fr;
+    grid-template-areas: "text"
+                         "images"
+                         "images"
+                         "images"
+                         "images"; 
+  }
+}
