@@ -64,15 +64,38 @@
     justify-self: center;
   }
   .lateral{
-    grid-area: lateral;
-    align-self: end;
-    background-color: #c72323;
-    color: white;
-    top: 90%;
+    bottom: 0;
+    top: auto;
     width: 100%;
-    height: auto;
+    height: 60px;
     position: fixed;
     z-index: 1;
+  }
+  .menu ul{
+    padding: 0 1em;
+    grid-template: 1fr / 2fr 1fr;
+  }
+  .menu a p{
+    display: none;
+  }
+  .list.one{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list.two{
+    display: flex;
+    justify-content:flex-end;
+  }
+
+  .home,
+  .trending,
+  .likes,
+  .settings{
+    display: flex;
+    padding: 0;
+    margin: 10px;
+    align-self: center;
   }
   .movies{
     grid-template: 2em repeat(4, 1fr) / 1fr;
