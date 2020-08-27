@@ -67,8 +67,8 @@ body{
 }
 
 .user img{
-  width: 50px;
-  border-radius: 50px;
+  width: 3.125em;
+  border-radius: 3.125em;
   align-self: center;
   justify-self:center;
 }
@@ -207,45 +207,4 @@ body{
 .images:hover .image-overlay{
   display: block;
   top:45%;
-}
-
-@media screen and (max-width: 1024px){
-  .container{
-    grid-template: 6% 1fr / 8% 1fr;
-    grid-template-areas: "header header"
-                       "lateral principal";
-  }
-  .header{
-    grid-template-columns: 1fr 400px 1fr;
-  }
-  .header input{
-    width: 80%;
-  }
-  .logo img{
-    width: 6.25em;
-  }
-  .user{
-    grid-template-columns: 2fr 1.5fr 2fr;
-  }
-  .user span{
-    font-size: .875em;
-  }
-  .menu ul{
-    grid-template-rows:1fr 2fr ; 
-  }
-  .menu a{
-    font-size: 1.25em;
-  }
-  .menu a p{
-    font-size: .67em;
-  }
-  .movies{
-    grid-template: 2em 1fr 1fr / repeat(2, minmax(350px ,1fr));
-    grid-template-areas: "text text"
-                         "images images"
-                         "images images";
-  }
-  .images{
-    grid-row: span 1;
-  }
 }
