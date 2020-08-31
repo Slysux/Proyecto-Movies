@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 768px){
   body{
-    /* font-size: 12px; */
+    font-size: 12px;
   }
   .container{
     grid-template: 3.75em 1fr 8%/ 1fr;
@@ -66,8 +66,8 @@
     display: none;
   }
   .user img{
-    width: 2.1875em;
-    justify-self: center;
+    width: 2.5em;
+    justify-self: end;
   }
   .lateral{
     bottom: 0;
@@ -100,15 +100,27 @@
   .settings{
     display: flex;
     padding: 0;
-    margin: 10px;
+    margin: 1em;
     align-self: center;
   }
+  .principal{
+    margin-bottom: 6em;
+  }
   .movies{
-    grid-template: 2em repeat(4, 1fr) / 1fr;
+    grid-template: 3em repeat(4, 1fr) / 1fr;
     grid-template-areas: "text"
                          "images"
                          "images"
                          "images"
                          "images"; 
+  }
+  .image-overlay{
+    padding: 2em;
+  }
+  .image-overlay h4{
+    font-size: 1.5em;
+  }
+  .image-overlay p{
+    font-size: 1em;
   }
 }

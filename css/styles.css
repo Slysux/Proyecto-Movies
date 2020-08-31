@@ -60,6 +60,7 @@ body{
 }
 
 .logo img{
+  margin: 1em;
   width: 9.375em;
   justify-self: center;
   align-self: center;
@@ -95,6 +96,7 @@ body{
 }
 
 .user img{
+  margin: 0 1em;
   width: 3.125em;
   border-radius: 3.125em;
   align-self: center;
