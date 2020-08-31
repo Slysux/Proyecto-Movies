@@ -13,7 +13,7 @@
   .logo img{
     width: 7.15em;
   }
-  .header input{
+  .input{
     width: 80%;
   }
   .user{
@@ -57,11 +57,33 @@
   }
   .header{
     position: initial;
-    grid-template-columns: 1fr 400px 1fr ;
+    grid-template-columns: 1fr 2fr 1fr ;
   }
   .user{
     grid-template-columns: 1.5fr 1fr;
   }
+  .input{
+    display: grid;
+    grid-template: 1fr / 1fr; 
+  }
+  .header input{
+    display: none;
+    width: 50%;
+  }
+  .icon-search{
+    display:grid;
+    align-self: center;
+    justify-self: end;
+  }
+
+  .icon-search:hover .input{
+    grid-template: 1fr / 1fr 1em; 
+  }
+
+  .icon-search:hover .header input{
+    display: flex;
+  }
+
   .user span{
     display: none;
   }
@@ -123,4 +145,15 @@
   .image-overlay p{
     font-size: 1em;
   }
+}
+
+@media screen and (max-width: 480px){
+  
+  .principal{
+    padding: 1.25em 0;
+  }
+  .text{
+    justify-self: center;
+  }
+  
 }

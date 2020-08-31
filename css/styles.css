@@ -66,14 +66,24 @@ body{
   align-self: center;
 }
 
+.icon-search{
+  display: none;
+  color: #000;
+  text-decoration: none;
+}
+
+.input{
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+}
+
 .header input{
   font-size: 1em;
-  width: 70%;
+  width: 100%;
   padding: .625em 1.25em;
   border-radius: 10px;
   border: 1px solid #555;
-  justify-self: center;
-  align-self: center;
 }
 
 .header input:focus{
