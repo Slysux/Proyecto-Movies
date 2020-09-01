@@ -46,11 +46,11 @@
 }
 
 @media screen and (max-width: 768px){
-  body{
+  /* body{
     font-size: 12px;
-  }
+  } */
   .container{
-    grid-template: 3.75em 1fr 8%/ 1fr;
+    grid-template: 5em 1fr 8%/ 1fr;
     grid-template-areas: "header"
                          "principal"
                          "lateral";
@@ -72,16 +72,9 @@
   }
   .icon-search{
     display:grid;
+    font-size: 1.34em;
     align-self: center;
     justify-self: end;
-  }
-
-  .icon-search:hover .input{
-    grid-template: 1fr / 1fr 1em; 
-  }
-
-  .icon-search:hover .header input{
-    display: flex;
   }
 
   .user span{
@@ -136,6 +129,9 @@
                          "images"
                          "images"; 
   }
+  .text{
+    font-size: 1.34em;
+  }
   .image-overlay{
     padding: 2em;
   }
@@ -143,17 +139,33 @@
     font-size: 1.5em;
   }
   .image-overlay p{
-    font-size: 1em;
+    font-size: 1.15em;
   }
 }
 
 @media screen and (max-width: 480px){
-  
+  body{
+    font-size: 12px;
+  }
+
+  .container{
+    grid-template: 3.75em 1fr 8%/ 1fr;
+    grid-template-areas: "header"
+                         "principal"
+                         "lateral";
+  }
+
+  .user{
+    grid-template-columns: 2fr 1fr;
+  }
+
   .principal{
     padding: 1.25em 0;
   }
   .text{
     justify-self: center;
   }
-  
+  .images:hover .image-overlay{
+    top: 0;
+  }
 }
