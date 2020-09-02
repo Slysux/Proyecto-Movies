@@ -3,12 +3,13 @@
     font-size: 14px;
   }
   .container{
-    grid-template: 3% 1fr / 9% 1fr;
+    grid-template: 5em 1fr / 8% 1fr;
     grid-template-areas: "header header"
                        "lateral principal";
   }
   .header{
     grid-template-columns: 1fr 400px 1fr;
+    height: 4.375em;
   }
   .logo img{
     width: 7.15em;
@@ -21,6 +22,9 @@
   }
   .user img{
     width: 2.86em;
+  }
+  .lateral{
+    top: 4.375em;
   }
   .menu ul{
     grid-template-rows:1fr 2fr ; 
@@ -62,16 +66,30 @@
   .input{
     display: grid;
     grid-template: 1fr / 1fr; 
+    width: 100%;
+    justify-self: center;
   }
-  .header input{
+
+  .input.is-active{
+    width: 92%;
+    justify-self: start;
+  }
+
+  .input-text{
     display: none;
-    width: 50%;
+  }
+  .input-text.is-active{
+    display: block;
+    width: 100%;
   }
   .icon-search{
     display:grid;
     font-size: 1.34em;
     align-self: center;
     justify-self: end;
+  }
+  .icon-search.is-active{
+    display: none;
   }
 
   .user span{
@@ -152,6 +170,11 @@
                          "lateral";
   }
 
+  .input.is-active{
+    width: 90%;
+    justify-self: start;
+  }
+
   .user{
     grid-template-columns: 2fr 1fr;
   }
@@ -164,5 +187,13 @@
   }
   .images:hover .image-overlay{
     top: 0;
+  }
+}
+
+@media screen and (max-width: 320px)
+{
+  .input.is-active{
+    width: 80%;
+    justify-self: start;
   }
 }

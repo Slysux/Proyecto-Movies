@@ -15,7 +15,7 @@
         <img src="imagenes/Netflix.svg" alt="">
       </figure>
       <div class="input">
-        <input type="text" placeholder="Busca tu peli, actor, actriz o director favorito">
+        <input class="input-text" type="text" placeholder="Busca tu peli, actor, actriz o director favorito">
         <a href="#" class="icon-search"></a>
       </div>
       <figure class="user">
@@ -148,5 +148,28 @@
       </div>
     </section>
   </div>
+  <script>
+    const ipad = window.matchMedia("screen and (max-width: 768px)");
+    const input = document.querySelector(".input");
+    const inputText = document.querySelector(".input-text");
+    const searchIcon = document.querySelector(".icon-search");
+
+    ipad.addListener(validation);
+    validation(ipad);
+
+    function validation(event) {
+      if(event.matches){
+        searchIcon.addEventListener("click", hideShow);
+      } else{
+        searchIcon.removeEventListener("click", hideShow);
+      }
+    }
+    
+    function hideShow() {
+      searchIcon.classList.toggle("is-active");
+      inputText.classList.toggle("is-active");
+      input.classList.toggle("is-active");
+    }
+  </script>
 </body>
 </html>
